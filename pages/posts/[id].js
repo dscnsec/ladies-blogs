@@ -32,7 +32,28 @@ export default function Post({ postData }) {
   <figcaption>
   <div className="fig-author-figure-title" style={{color:'#2196f3',fontSize:"28px"}}>Author Profile</div>
     <div className="fig-author-figure-title" style={{fontSize:"30.6px",color:"#0C264E"}}>{postData.author}</div>
-    <div className="fig-author-figure-title" style={{fontSize:"30px"}}><a href={postData.mail} target="_blank" id="con"><i className="fa fa-envelope" id="con1"></i></a><a href={postData.linkedin} target="_blank" id="con"><i className="fa fa-linkedin-square" id="con1"></i></a><a href={postData.github} target="_blank" id="con"><i className="fa fa-github" id="con1"></i></a><a href={postData.twitter} target="_blank" id="con"><i className="fa fa-twitter" id="con1"></i></a><a href={postData.portfolio} target="_blank" id="con"><i className="fa fa-link" id="con1"></i></a>
+    <div className="fig-author-figure-title" style={{fontSize:"30px"}}>
+      {postData.mail &&
+      <a href={postData.mail} target="_blank" id="con">
+        <i className="fa fa-envelope" id="con1"></i>
+      </a> }
+      {postData.linkedin && 
+      <a href={postData.linkedin} target="_blank" id="con">
+        <i className="fa fa-linkedin-square" id="con1"></i>
+      </a>}
+      {postData.github && 
+      <a href={postData.github} target="_blank" id="con">
+        <i className="fa fa-github" id="con1"></i>
+      </a>}
+      {postData.twitter && 
+      <a href={postData.twitter} target="_blank" id="con">
+        <i className="fa fa-twitter" id="con1"></i>
+      </a>}
+      {postData.portfolio &&
+      <a href={postData.portfolio} target="_blank" id="con">
+        <i className="fa fa-link" id="con1"></i>
+      </a> }
+      
     </div>
   </figcaption>
   
