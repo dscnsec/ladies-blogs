@@ -13,11 +13,13 @@ export default function Layout({ children, home }) {
     <ButtonAppBar/>
     <br></br>
     <br></br>
+    <br></br>
     <div className={styles.container}>
       
       <Head>
       <meta http-equiv="X-UA-Compatible" content="ie=edge"></meta>
       <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"></link>
       <script src="/cdn-cgi/apps/head/6kU11nKgEkfrA6ZInbd7H1KCWSY.js"></script>
       <script src="https://www.googletagmanager.com/gtag/js?id=UA-86020000-1"></script>
       <link rel="manifest" href="/manifest.json"></link>

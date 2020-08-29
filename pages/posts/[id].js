@@ -32,10 +32,10 @@ export default function Post({ postData }) {
   <figcaption>
   <div className="fig-author-figure-title" style={{color:'#2196f3',fontSize:"28px"}}>Author Profile</div>
     <div className="fig-author-figure-title" style={{fontSize:"30.6px",color:"#0C264E"}}>{postData.author}</div>
-    <div className="fig-author-figure-title" style={{color:"grey",fontSize:"25px"}}>{postData.intro}</div>
-    <div className="fig-author-figure-title" style={{fontSize:"26px"}}><i className="fa fa-envelope"/>:{postData.mail}</div>
-    <div className="fig-author-figure-title" style={{fontSize:"30px"}}><a href={postData.linkedin} target="_blank"><i className="fa fa-linkedin-square"></i></a><a href={postData.github} target="_blank"><i className="fa fa-github"></i></a><a href={postData.twitter} target="_blank"><i className="fa fa-twitter"></i></a><a href={postData.portfolio} target="_blank"><i className="fa fa-link"></i></a></div>
+    <div className="fig-author-figure-title" style={{fontSize:"30px"}}><a href={postData.mail} target="_blank" id="con"><i className="fa fa-envelope" id="con1"></i></a><a href={postData.linkedin} target="_blank" id="con"><i className="fa fa-linkedin-square" id="con1"></i></a><a href={postData.github} target="_blank" id="con"><i className="fa fa-github" id="con1"></i></a><a href={postData.twitter} target="_blank" id="con"><i className="fa fa-twitter" id="con1"></i></a><a href={postData.portfolio} target="_blank" id="con"><i className="fa fa-link" id="con1"></i></a>
+    </div>
   </figcaption>
+  
 </figure>
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
@@ -52,9 +52,9 @@ export default function Post({ postData }) {
   }
   
   .fir-clickcircle {
-    height: 100px;
-    width: 100px;
-    border-radius: 100px;
+    height: 120px;
+    width: 120px;
+    border-radius: 80px;
   }
   
   .fir-image-figure {
@@ -86,6 +86,7 @@ export default function Post({ postData }) {
   
   
       `}</style>
+      
     </>
   )
 }

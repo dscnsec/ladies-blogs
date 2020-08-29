@@ -3,11 +3,10 @@ title: 'Procheta'
 date: '2020-01-01'
 author: 'Procheta Bhattacharyya'
 short: 'it is a sample blog.'
-intro: 'hi 👩‍💻 i am procheta.'
-image: 'https://images.unsplash.com/photo-1518117743130-17d4de973e24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
+image: 'https://procheta1999.vercel.app/photo.jpg'
 linkedin: 'https://www.linkedin.com/in/procheta-bhattacharyya-18890818b/'
 github: 'https://github.com/procheta1999'
-mail: "bhattacharyya.procheta1999@gmail.com"
+mail: "mailto:bhattacharyya.procheta1999@gmail.com"
 twitter: ''
 portfolio: 'https://procheta1999.vercel.app/'
 ---

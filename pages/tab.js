@@ -36,13 +36,13 @@ export default function ButtonAppBar() {
             /></Link>
           </IconButton>
           
-          <a href="https://dscnsec.com/" target="_blank"><Typography variant="h5" style={{ color: 'black' }}>DSC NSEC</Typography></a>
+          <a href="https://dscnsec.com/" target="_blank"><Typography variant="h5" style={{ color: 'black', fontSize:"1.7rem" }}>DSC NSEC</Typography></a>
         </Toolbar>
       </AppBar>
       <style jsx>{`
       #i{
-          width:50px;
-          height:50px;
+          width:75.5px;
+          height:75.5px;
       }
       #app,Toolbar{
           background-color:white;
