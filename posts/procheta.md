@@ -8,6 +8,8 @@ image: 'https://images.unsplash.com/photo-1518117743130-17d4de973e24?ixlib=rb-1.
 linkedin: 'https://www.linkedin.com/in/procheta-bhattacharyya-18890818b/'
 github: 'https://github.com/procheta1999'
 mail: "bhattacharyya.procheta1999@gmail.com"
+twitter: ''
+portfolio: 'https://procheta1999.vercel.app/'
 ---
 
 <br>

@@ -25,15 +25,16 @@ export default function Post({ postData }) {
           <br></br>
           <br></br>
           <figure className="fir-image-figure">
-<center style={{color:'#2196f3'}}>Author Profile</center>
 <br></br>
 <br></br>
     <img className="fir-author-image fir-clickcircle" src={postData.image} alt="author"></img>
 
   <figcaption>
-    <div className="fig-author-figure-title" style={{fontSize:"30px",color:"#0C264E"}}>{postData.author}</div>
-    <div className="fig-author-figure-title" style={{color:"grey",fontSize:"22px"}}>{postData.intro}</div>
-    <div className="fig-author-figure-title" style={{fontSize:"25px"}}><a href={postData.linkedin} target="_blank"><i className="fa fa-linkedin-square"></i></a><a href={postData.github} target="_blank"><i className="fa fa-github"></i></a><a href="mailto: {postData.mail}" ><i className="fa fa-envelope"></i></a></div>
+  <div className="fig-author-figure-title" style={{color:'#2196f3',fontSize:"28px"}}>Author Profile</div>
+    <div className="fig-author-figure-title" style={{fontSize:"30.6px",color:"#0C264E"}}>{postData.author}</div>
+    <div className="fig-author-figure-title" style={{color:"grey",fontSize:"25px"}}>{postData.intro}</div>
+    <div className="fig-author-figure-title" style={{fontSize:"26px"}}><i className="fa fa-envelope"/>:{postData.mail}</div>
+    <div className="fig-author-figure-title" style={{fontSize:"30px"}}><a href={postData.linkedin} target="_blank"><i className="fa fa-linkedin-square"></i></a><a href={postData.github} target="_blank"><i className="fa fa-github"></i></a><a href={postData.twitter} target="_blank"><i className="fa fa-twitter"></i></a><a href={postData.portfolio} target="_blank"><i className="fa fa-link"></i></a></div>
   </figcaption>
 </figure>
         </div>
@@ -79,7 +80,7 @@ export default function Post({ postData }) {
     color: var(--fir-color-grey);
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 19px;
     margin-top: 2px;
   }
   
