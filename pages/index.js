@@ -23,32 +23,47 @@ export default function Home({ allPostsData }) {
 <br></br>
 <div id="pro"><section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
   
-<Typography variant="h2"><h2 className={utilStyles.headingLg}>Blog Section📖🖋</h2></Typography>
-<center><img src="https://media4.giphy.com/media/l44Qqz6gO6JiVV3pu/200w.webp?cid=ecf05e47bjp24rpgyr100vziavsqfil200f2kvb81rj4hzyw&rid=200w.webp"></img></center>
+<Typography variant="h2"><h2 className={utilStyles.headingLg}>Blogs📖🖋</h2></Typography>
         <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title, author, short }) => (
+          {allPostsData.map(({ id, date, title, author, short, cover }) => (
          <div className="card"><li className={utilStyles.listItem} key={id}>
-              <Link href="/posts/[id]" as={`/posts/${id}`}>
+           <figure className="fir-image-figure">
+           <img className="fir-author-image fir-clickcircle" src={cover} alt="author"></img>
+           <figcaption>
+    <div className="fig-author-figure-title" style={{fontSize:"30.6px",color:"#0C264E"}}><Link href="/posts/[id]" as={`/posts/${id}`}>
                 <a><Typography variant="h5">{title}</Typography></a>
-              </Link>
-              <small className={utilStyles.lightText}>
-              {short}
-              <br></br>
-                <Date dateString={date} />
-                <br></br>
-<i>{author}</i>
-<br></br>
-
-              </small>
-            </li></div>
+              </Link></div>
+              <div className="fig-author-figure-title" style={{fontSize:"19px",color:"#0C264E"}}>{short}</div>
+              <div className="fig-author-figure-title" style={{fontSize:"19px",color:"#0C264E"}}><Date dateString={date} /></div>
+              <div className="fig-author-figure-title" style={{fontSize:"19px",color:"black"}}><i>{author}</i></div>
+    </figcaption>
+            </figure></li></div>
           ))}
         </ul>
       </section></div>
       <style jsx>{`
+      .fir-clickcircle,.fig-author-figure-title a {
+        margin-right: 30px;
+     } 
+     .fir-clickcircle {
+      height: 130px;
+      width: 130px;
+      border-radius: 80px;
+    }
+    
+    .fir-image-figure {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+      position: relative;
+      text-decoration: none;
+    }  
+    fir-image-figure .caption, .fir-image-figure figcaption {
+      padding-left: 20px;
+      padding-right: 15px;
+    }  
       #pro{
-        background-color: #f9f9f9;
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
     padding:1em 1em 1em 1em;
 font-size:20px;
       }

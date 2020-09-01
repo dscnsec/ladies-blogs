@@ -30,7 +30,6 @@ export default function Post({ postData }) {
     <img className="fir-author-image fir-clickcircle" src={postData.image} alt="author"></img>
 
   <figcaption>
-  <div className="fig-author-figure-title" style={{color:'#2196f3',fontSize:"28px"}}>Author Profile</div>
     <div className="fig-author-figure-title" style={{fontSize:"30.6px",color:"#0C264E"}}>{postData.author}</div>
     <div className="fig-author-figure-title" style={{fontSize:"30px"}}>
       {postData.mail &&

@@ -9,6 +9,7 @@ github: 'https://github.com/procheta1999'
 mail: "mailto:bhattacharyya.procheta1999@gmail.com"
 twitter: ''
 portfolio: 'https://procheta1999.vercel.app/'
+cover: 'https://t4.ftcdn.net/jpg/02/75/11/41/240_F_275114154_XjA5hxmjz6wt0MRMrsCf8EyQEPsHZuxw.jpg'
 ---
 
 <br>
