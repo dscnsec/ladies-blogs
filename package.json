@@ -11,6 +11,7 @@
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
     "date-fns": "^2.12.0",
+    "disqus-react": "^1.0.10",
     "gray-matter": "^4.0.2",
     "next": "9.3.5",
     "react": "16.13.1",

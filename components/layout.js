@@ -5,6 +5,7 @@ import Link from 'next/link'
 import ContainedButtons from './button'
 import ButtonAppBar from '../pages/tab'
 
+
 const name = 'DSC NSEC Blogs!'
 export const siteTitle = 'DSC NSEC Blogs!'
 

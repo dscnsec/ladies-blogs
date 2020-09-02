@@ -3,7 +3,13 @@ import { getAllPostIds, getPostData } from '../../lib/posts'
 import Head from 'next/head'
 import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css'
-
+import Disqus from "disqus-react"
+import { DiscussionEmbed } from 'disqus-react';
+const disqusShortname = "dsc-nsec-blogs"
+    const disqusConfig = {
+      url: "/posts/[id]",
+      identifier: "/posts/[id]",
+    }
 export async function getStaticPaths() {
     const paths = getAllPostIds()
     return {
@@ -59,6 +65,18 @@ export default function Post({ postData }) {
 </figure>
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+      <br></br>
+      <div className="article-container">
+      <DiscussionEmbed
+    shortname='dsc-nsec-blogs'
+    config={
+        {
+            url: "/posts/[id]",
+            identifier: "/posts/[id]",	
+        }
+    }
+/>
+</div>
       </article>
     </Layout>
     <style jsx>{`
