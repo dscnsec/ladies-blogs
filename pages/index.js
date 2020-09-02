@@ -30,12 +30,12 @@ export default function Home({ allPostsData }) {
            <figure className="fir-image-figure">
            <img className="fir-author-image fir-clickcircle" src={cover} alt="author"></img>
            <figcaption>
-    <div className="fig-author-figure-title" style={{fontSize:"30.6px",color:"#0C264E"}}><Link href="/posts/[id]" as={`/posts/${id}`}>
+    <div className="fig-author-figure-title" style={{fontSize:"29px",color:"#0C264E"}}><Link href="/posts/[id]" as={`/posts/${id}`}>
                 <a><Typography variant="h5">{title}</Typography></a>
               </Link></div>
-              <div className="fig-author-figure-title" style={{fontSize:"19px",color:"#0C264E"}}>{short}</div>
-              <div className="fig-author-figure-title" style={{fontSize:"19px",color:"#0C264E"}}><Date dateString={date} /></div>
-              <div className="fig-author-figure-title" style={{fontSize:"19px",color:"black"}}><i>{author}</i></div>
+              <div className="fig-author-figure-title" style={{fontSize:"22px",color:"#0C264E"}}>{short}</div>
+              <div className="fig-author-figure-title" style={{fontSize:"22px",color:"#0C264E"}}><Date dateString={date} /></div>
+              <div className="fig-author-figure-title" style={{fontSize:"22px",color:"black"}}><i>{author}</i></div>
     </figcaption>
             </figure></li></div>
           ))}

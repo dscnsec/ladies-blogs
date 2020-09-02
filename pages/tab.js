@@ -30,16 +30,23 @@ export default function ButtonAppBar() {
     <div className={{root:classes.root}}>
       <AppBar style={{ background: 'white' }}>
         <Toolbar>
+        
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
           <Link href="/"><img id="i"
               src="https://dscnsec.com/favicon.png"
             /></Link>
           </IconButton>
-          
           <a href="https://dscnsec.com/" target="_blank"><div id="txt">DSC NSEC</div></a>
+          <div id="github"><IconButton><a href="https://github.com/dscnsec/ladies-blogs" target="_blank">
+        <i className="fa fa-github"></i></a></IconButton>
+          </div>
         </Toolbar>
       </AppBar>
       <style jsx>{`
+      #github{
+        margin-left:12rem;
+        font-size:2rem;
+      }
       #txt{
 font-size:3rem;
       }
@@ -48,6 +55,10 @@ font-size:3rem;
         #txt{
           font-size:2rem;
         }
+          #github{
+            margin-left:57rem;
+        font-size:1.5rem;
+          }
       }
       #i{
           width:75.5px;
