@@ -71,8 +71,8 @@ export default function Post({ postData }) {
     shortname='dsc-nsec-blogs'
     config={
         {
-            url: "/posts/[id]",
-            identifier: "/posts/[id]",	
+            url: "http://localhost:3000/posts/[id]",
+            identifier:'/posts/[id]',	
         }
     }
 />

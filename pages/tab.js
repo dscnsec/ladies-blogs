@@ -7,6 +7,7 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Link from 'next/link'
+import MenuPopupState from "./menu"
 
 const useStyles = makeStyles({
   root: {
@@ -37,18 +38,23 @@ export default function ButtonAppBar() {
             /></Link>
           </IconButton>
           <a href="https://dscnsec.com/" target="_blank"><div id="txt">DSC NSEC</div></a>
-          <div id="github"><IconButton><a href="https://github.com/dscnsec/ladies-blogs" target="_blank">
-        <i className="fa fa-github"></i></a></IconButton>
-          </div>
+          <div id="right"><MenuPopupState/></div>
         </Toolbar>
       </AppBar>
       <style jsx>{`
+      #right {
+     margin-top: 1px;
+     margin-right: 2px;
+     position:absolute;
+     top:1;
+     right:0;
+ }
       #github{
         margin-left:12rem;
         font-size:2rem;
       }
       #txt{
-font-size:3rem;
+font-size:2.5rem;
       }
       @media screen and (min-width:900px)
       {

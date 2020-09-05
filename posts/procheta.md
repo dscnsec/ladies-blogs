@@ -14,7 +14,7 @@ cover: 'https://t4.ftcdn.net/jpg/02/75/11/41/240_F_275114154_XjA5hxmjz6wt0MRMrsC
 
 <br>
 <center><img src="https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-     alt="Markdown Monster icon"/></center><br>
+     alt="Markdown Monster icon" width=70% height=70%/></center><br>
 
 Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
 
