@@ -32,11 +32,8 @@ export default function MediaControlCard() {
   const theme = useTheme();
 
   return (
-    <Card className={classes.root}>
-        <CardMedia
-        className={classes.cover}
-        image="https://dscnsec.com/favicon.png"
-      />
+    <Card>
+        <img src="https://dscnsec.com/favicon.png" style={{float:"left",height:"120px",width:"120px"}}></img>
       <div className={classes.details}>
         <CardContent className={classes.content}>
           <Typography component="h5" variant="h5">
