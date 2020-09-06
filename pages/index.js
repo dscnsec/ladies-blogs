@@ -11,6 +11,7 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
+import Grid from '@material-ui/core/Grid';
 const useStyles = makeStyles({
   root: {
     maxWidth: 250,
@@ -22,9 +23,6 @@ export default function Home({ allPostsData }) {
   const classes = useStyles();
   return (<><Head><title>DSC NSEC Blogs!</title>
   <meta charset="UTF-8"></meta>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"></link>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"></link>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
     <link rel="icon" href="/images/favicon.ico" /> </Head>
@@ -38,9 +36,9 @@ export default function Home({ allPostsData }) {
 <br></br>
 <div id="pro"><section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
 
-        <div className="row">
+<Grid container spacing={3}>
           {allPostsData.map(({ id, date, title, author, short, cover }) => (
-         <div className="col-sm-4" key={id}>
+         <Grid item xs={12} sm={4} key={id}>
            <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
@@ -59,9 +57,9 @@ export default function Home({ allPostsData }) {
           </Typography>
         </CardContent>
       </CardActionArea>
-    </Card><br></br></div>
+    </Card><br></br></Grid>
           ))}
-        </div>
+        </Grid>
       </section></div>
       <style jsx>{`
       .fir-clickcircle,.fig-author-figure-title a {
