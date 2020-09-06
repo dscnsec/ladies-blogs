@@ -38,7 +38,7 @@ export default function Home({ allPostsData }) {
 
 <Grid container spacing={3}>
           {allPostsData.map(({ id, date, title, author, short, cover }) => (
-         <Grid item xs={12} sm={4} key={id}>
+         <Grid item xs={16} sm={4} key={id}>
            <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
