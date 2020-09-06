@@ -23,6 +23,7 @@ export default function Post({ postData }) {
     <Layout>
       <Head>
         <title>{postData.title}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=0.9"></meta>
       </Head>
       <article id="b">
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
@@ -36,7 +37,7 @@ export default function Post({ postData }) {
     <img className="fir-author-image fir-clickcircle" src={postData.image} alt="author"></img>
 
   <figcaption>
-    <div className="fig-author-figure-title" style={{fontSize:"30.6px",color:"#0C264E"}}>{postData.author}</div>
+    <div className="fig-author-figure-title" style={{fontSize:"28px",color:"#0C264E"}}>{postData.author}</div>
     <div className="fig-author-figure-title" style={{fontSize:"30px"}}>
       {postData.mail &&
       <a href={postData.mail} target="_blank" id="con">
