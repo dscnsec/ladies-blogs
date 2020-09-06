@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import ButtonBase from '@material-ui/core/ButtonBase';
-
+import Button from '@material-ui/core/Button';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -49,9 +49,9 @@ export default function ComplexGrid() {
                 </Typography>
               </Grid>
               <Grid item>
-                <Typography variant="body2" style={{ cursor: 'pointer' }}>
+              <center><Button variant="contained" style={{backgroundColor:"#2196f3", color:"white"}}>
                  <a href="https://medium.com/@dscnsec/dsc-nsec-week-one-47944e5d115e" target="_blank">Read</a>
-                </Typography>
+                </Button></center>
               </Grid>
             </Grid>
           </Grid>
