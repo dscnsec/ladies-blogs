@@ -28,7 +28,7 @@ export default function Layout({ children, home }) {
       <meta name="keywords" content="blog,Next.js"></meta>
       <meta name="description" content="DSC NSEC Blogs!"></meta>
       <meta name="author" content="Procheta Bhattacharyya"></meta>
-      <meta name="viewport" content="width=device-width, initial-scale=0.7"></meta>
+      <meta name="viewport" content="width=device-width, initial-scale=0.8"></meta>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
       
         <link rel="icon" href="/favicon.ico" />
