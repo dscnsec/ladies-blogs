@@ -12,6 +12,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Grid from '@material-ui/core/Grid';
+import ComplexGrid from "./fea"
 const useStyles = makeStyles({
   root: {
     maxWidth: 250,
@@ -34,7 +35,8 @@ export default function Home({ allPostsData }) {
 <br></br>   
 <div id="p">     <section  className={utilStyles.headingMd}>We, at DSC NSEC, believe that everyone has a unique story to tell to the world- a story about them,how they reached success, how they never gave up, what challenges did they face, what was the final outcome. So we came up with our blog platform<span id="blue"> DSC NSEC blogs! </span>to help reach your stories to the world, to encourage more people in their journey. So, let's start writing !</section></div>
 <br></br>
-<div id="pro"><section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+<ComplexGrid/>
+<div id="pro"><section>
 
 <Grid container spacing={3}>
           {allPostsData.map(({ id, date, title, author, short, cover }) => (
