@@ -43,8 +43,7 @@ export default function Layout({ children, home }) {
         {home ? (
           <>
           <ButtonAppBar/>
-            <center><img src="/images/banner.png" width="100%"></img></center>
-            <br></br>
+            
           </>
         ) : (
           <>

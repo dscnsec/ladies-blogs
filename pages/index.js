@@ -28,7 +28,8 @@ export default function Home({ allPostsData }) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
     <link rel="icon" href="/images/favicon.ico" /> </Head>
     <Layout home>
-      
+    <center><img src="/images/banner.png" width="100%"></img></center>
+            <br></br>      
 <div>     <section  className={utilStyles.headingMd}></section></div>
 <br></br>
 <ComplexGrid/>
