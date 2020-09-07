@@ -54,7 +54,7 @@ export default function ButtonAppBar() {
         font-size:2rem;
       }
       #txt{
-font-size:2rem;
+font-size:1.8rem;
       }
       @media screen and (min-width:900px)
       {
