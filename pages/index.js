@@ -28,12 +28,8 @@ export default function Home({ allPostsData }) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
     <link rel="icon" href="/images/favicon.ico" /> </Head>
     <Layout home>
-      <i><Typography variant="h3"><center><div id="pr">Write Your Own Story!</div></center></Typography></i>
-      <br></br>
-<center>      <img src="https://media3.giphy.com/media/pOZhmE42D1WrCWATLK/200w.webp?cid=ecf05e47v7hnpk4dp49owbh0iputoj6ml3naebla8karkx0g&rid=200w.webp"></img></center>
-
-<br></br>   
-<div id="p">     <section  className={utilStyles.headingMd}>We, at DSC NSEC, believe that everyone has a unique story to tell to the world- a story about them,how they reached success, how they never gave up, what challenges did they face, what was the final outcome. So we came up with our blog platform<span id="blue"> DSC NSEC blogs! </span>to help reach your stories to the world, to encourage more people in their journey. So, let's start writing !</section></div>
+      
+<div>     <section  className={utilStyles.headingMd}></section></div>
 <br></br>
 <ComplexGrid/>
 <div id="pro"><section>

@@ -43,7 +43,8 @@ export default function Layout({ children, home }) {
         {home ? (
           <>
           <ButtonAppBar/>
-            <center><h1 className="google-font mb-1 light-font-color" className={utilStyles.heading2Xl}>{name}</h1></center>
+            <center><img src="/images/banner.png" width="100%"></img></center>
+            <br></br>
           </>
         ) : (
           <>
