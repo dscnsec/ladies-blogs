@@ -70,8 +70,8 @@ padding: 0rem 0rem 0rem 0rem;
       @media screen and (min-width:900px)
       {
         #i{
-          width:600px;
-          height:250px;
+          width:830px;
+          height:300px;
           padding:1rem 1rem 1rem 1rem;
         }
       }
