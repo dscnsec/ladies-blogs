@@ -22,13 +22,14 @@ const useStyles = makeStyles({
 
 export default function Home({ allPostsData }) {
   const classes = useStyles();
-  return (<><Head><title>DSC NSEC Blogs!</title>
+  return (<><Head><title>DSC NSEC Blogs</title>
   <meta charset="UTF-8"></meta>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"></link>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
     <link rel="icon" href="/images/favicon.ico" /> </Head>
     <Layout home>
-    <center><img src="/images/banner.png" width="100%"></img></center>
+      <br></br>
+    <center><img id="i" src="/images/banner.png" ></img></center>
             <br></br>      
 <div>     <section  className={utilStyles.headingMd}></section></div>
 <br></br>
@@ -37,7 +38,8 @@ export default function Home({ allPostsData }) {
 
 <Grid container spacing={3}>
           {allPostsData.map(({ id, date, title, author, short, cover }) => (
-         <Grid item xs={20} sm={4} key={id}>
+         <Grid item xs={12} sm={4} key={id}>
+           <Link href="/posts/[id]" as={`/posts/${id}`}>
            <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
@@ -47,20 +49,32 @@ export default function Home({ allPostsData }) {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-          <Link href="/posts/[id]" as={`/posts/${id}`}>
                 <a>{title}</a>
-              </Link>
+              
           </Typography>
           <Typography variant="subtitle" color="textSecondary" component="p" style={{fontSize:"20px"}}>
           {author}
           </Typography>
         </CardContent>
       </CardActionArea>
-    </Card><br></br></Grid>
+    </Card></Link></Grid>
           ))}
         </Grid>
       </section></div>
       <style jsx>{`
+      #i{
+        width:280px;
+        height:170px;
+padding: 0rem 0rem 0rem 0rem;
+      }
+      @media screen and (min-width:900px)
+      {
+        #i{
+          width:600px;
+          height:250px;
+          padding:1rem 1rem 1rem 1rem;
+        }
+      }
       .fir-clickcircle,.fig-author-figure-title a {
         margin-right: 30px;
      } 

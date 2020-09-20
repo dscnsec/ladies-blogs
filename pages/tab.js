@@ -37,7 +37,7 @@ export default function ButtonAppBar() {
               src="https://dscnsec.com/favicon.png"
             /></Link>
           </IconButton>
-          <a href="https://dscnsec.com/" target="_blank"><div id="txt">DSC NSEC</div></a>
+          <div id="txt"><Link href="/">DSC NSEC</Link></div>
           <div id="right"><MenuPopupState/></div>
         </Toolbar>
       </AppBar>
@@ -69,6 +69,13 @@ font-size:2rem;
       #i{
           width:75.5px;
           height:75.5px;
+      }
+      @media screen and (min-width:900px)
+      {
+        #i{
+          width:100px;
+          height:100px;
+        }
       }
       #app,Toolbar{
           background-color:white;
