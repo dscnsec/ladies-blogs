@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[14],{xjIO:function(n,w,o){(window.__NEXT_P=window.__NEXT_P||[]).push(["/menu",function(){return o("LtPk")}])}},[["xjIO",0,1,2,3,4]]]);
